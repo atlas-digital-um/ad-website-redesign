@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import teambg from "/public/team-background.jpg";
-import firebaseImageLoader from "firebaseImageLoader";
+import firebaseImageLoader from "./firebaseImageLoader";
 import { getTeam } from "../../lib/apiCalls";
 import {
   team_website as website,
