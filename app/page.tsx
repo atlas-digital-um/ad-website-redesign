@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import CountUp from "react-countup";
-import groupPic from "/public/ad-group.jpg";
-import bgStill from "/public/bg-still.jpg"
+import groupPic from "/ad-group.jpg";
+import bgStill from "/bg-still.jpg"
 import { Typewriter } from "react-simple-typewriter";
 import {
   typewriter,
