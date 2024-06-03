@@ -1,0 +1,52 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[redirects]]
+  from = "/_next/image"
+  to = "/.netlify/functions/next_image"
+  status = 200
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[[redirects]]
+  from = "/_ipx/*"
+  to = "/.netlify/images?url=:url&w=:width&q=:quality"
+  status = 200
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+
+[context.production]
+  command = "npm run build"
+  publish = ".next"
+
+# Ensure remote images are allowed if needed
+[context.production.images]
+  remote_images = [
+    "^(?:https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/internal-project-22ae3\\.appspot\\.com\\/o(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$",
+    "^(?:http(?:s)?:\\/\\/firebasestorage\\.googleapis\\.com(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"
+  ]
+
+# Repeat the same for the main context if needed
+[context.main]
+  command = "npm run build"
+  publish = ".next"
+
+[context.main.images]
+  remote_images = [
+    "^(?:https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/internal-project-22ae3\\.appspot\\.com\\/o(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$",
+    "^(?:http(?:s)?:\\/\\/firebasestorage\\.googleapis\\.com(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"
+  ]
