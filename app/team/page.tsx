@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import teambg from "/public/team-background.jpg";
-
+import firebaseImageLoader from "firebaseImageLoader";
 import { getTeam } from "../../lib/apiCalls";
 import {
   team_website as website,
@@ -29,6 +29,8 @@ type Club = {
   presvp: Array<Member>;
   alumni: Array<Member>;
 };
+
+
 
 const getProps = async () => {
   // Fetch data from firebase
@@ -168,6 +170,7 @@ export default async function Team() {
         {(member.pfpURL !== '' && member.pfpURL !== undefined) ?
           <Image
             fill
+            loader={firebaseImageLoader}
             src={member.pfpURL}
             alt="PFP"
             style={{ objectFit: "cover", objectPosition: "center" }}
