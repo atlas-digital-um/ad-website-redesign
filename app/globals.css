@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../public/fonts/Kanit/Kanit-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: bold;
+  src: url('../public/fonts/Kanit/Kanit-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("../public/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf")
+}
+
+.ellipse-gradient {
+  background: radial-gradient(ellipse at center, #052779 0%, rgba(0, 0, 255, 0) 70%);
+}
+
+@keyframes rainbow {
+  0% { background-color: orangered; }
+  16% { background-color: orange; }
+  33% { background-color: yellow; }
+  49% { background-color: lime; }
+  66% { background-color: cyan; }
+  83% { background-color: orchid; }
+  100% { background-color: orangered; }
+}
+
+.rainbow-bg {
+  animation: rainbow 500ms linear infinite;
+  background-size: 200% 200%;
+  color: transparent;
+  background-clip: text;
+}
