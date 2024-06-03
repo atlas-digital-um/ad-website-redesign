@@ -1,0 +1,43 @@
+[images]
+remote_images = [
+  "^(?:https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/internal-project-22ae3\\.appspot\\.com\\/o(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$",
+  "^(?:http(?:s)?:\\/\\/firebasestorage\\.googleapis\\.com(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"
+]
+
+[[redirects]]
+from = "/_next/image"
+to = "/.netlify/functions/next_image"
+status = 200
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[[redirects]]
+from = "/_ipx/*"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
+status = 200
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[context]
+
+  [context.production]
+
+    [context.production.images]
+    remote_images = [
+      "^(?:https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/internal-project-22ae3\\.appspot\\.com\\/o(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$",
+      "^(?:http(?:s)?:\\/\\/firebasestorage\\.googleapis\\.com(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"
+    ]
+
+  [context.main]
+
+    [context.main.images]
+    remote_images = [
+      "^(?:https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/internal-project-22ae3\\.appspot\\.com\\/o(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$",
+      "^(?:http(?:s)?:\\/\\/firebasestorage\\.googleapis\\.com(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"
+    ]
