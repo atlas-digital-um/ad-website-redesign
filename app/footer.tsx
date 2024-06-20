@@ -4,7 +4,7 @@ import {
   footer_linkedin as linkedin,
   ad_logo_long as logo
 } from "./svg"
-import { applicationPortal } from "./text";
+import { applicationPortal, currentlyRecruiting } from "./text";
 import Created from "./created";
 
 export default function Footer() {
@@ -52,7 +52,7 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </div>
-              <div className="hidden sm:flex flex-col w-20 lg:w-28 items-center lg:items-start">
+              <div className={`hidden ${currentlyRecruiting ? 'sm:flex' : '' } flex-col w-20 lg:w-28 items-center lg:items-start`}>
                 <div className="font-bold pb-4 uppercase">Students</div>
                 <Link href={applicationPortal} target="_blank">
                   <button className="bg-ad-blue w-24 lg:w-28 py-1 rounded-lg text-white font-bold bg-gradient-to-r from-[#052779] to-[#1DAFEC] hover:shadow-button duration-200">
@@ -61,7 +61,7 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="sm:hidden flex flex-col items-center pt-8">
+            <div className={`${currentlyRecruiting ? 'sm:hidden' : 'hidden'} flex flex-col items-center pt-8`}>
               <Link href={applicationPortal} target="_blank">
                 <button className="bg-ad-blue w-60 py-2 rounded-lg text-white font-bold bg-gradient-to-r from-[#052779] to-[#1DAFEC] hover:shadow-button duration-200">
                   Application Portal

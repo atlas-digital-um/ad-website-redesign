@@ -59,7 +59,7 @@ export default function RootLayout({
           >
             {children}
           </main>
-          <div className="border-t border-ad-blue w-full max-w-[2000px]">
+          <div className="border-t border-ad-blue/50 w-full max-w-[2000px]">
             <Footer />
           </div>
         </div>

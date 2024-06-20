@@ -15,7 +15,7 @@ import palmTree from "../public/clients/example-palmTree.jpg";
 import saphran from "../public/clients/example-saphran.jpg";
 import dewpoint from "../public/clients/example-dewpoint.jpg";
 
-import { accenture, aiml, amazon, apple, atNt, bankOfAmerica, bubble, capitalOne, cisco, cloudComputing, dbManagement, deloitte, duolingo, ernstNyoung, figma, google, ibm, intel, janeStreet, jpMorgan, meta, microsoft, mongoDB, palantir, paypal, robinhood, salesforce, seo, serviceNow, stripe, tesla, tiktok, uber, uxDesign, verizon, webDev } from "./svg";
+import { accenture, aiml, amazon, apple, atNt, bankOfAmerica, bubble, capitalOne, cisco, cloudComputing, dbManagement, deloitte, duolingo, ernstNyoung, figma, google, ibm, intel, janeStreet, jpMorgan, meta, microsoft, mongoDB, palantir, paypal, robinhood, salesforce, seo, serviceNow, snap, stripe, tesla, tiktok, uber, uxDesign, verizon, webDev } from "./svg";
 
 // imports for recruiting page
 import alexyang from "/public/headshots/alexyang.jpg";
@@ -330,22 +330,22 @@ export const stats = [
     {
         stat: 65,
         suffix: "+",
-        label: "MEMBERS",
+        label: "Members",
     },
     {
         stat: 35,
         suffix: "+",
-        label: "ALUMNI",
+        label: "Alumni",
     },
     {
         stat: 20,
         suffix: "+",
-        label: "CLIENTS",
+        label: "Clients",
     },
     {
-        stat: 100,
-        suffix: "K+",
-        label: "AVG SALARY",
+        stat: 10,
+        suffix: "+",
+        label: "Majors",
     },
 ];
 
@@ -427,7 +427,7 @@ export const companyCloud = [
     atNt, meta, salesforce, google, deloitte, stripe, figma, amazon,
     mongoDB, apple, paypal, palantir, duolingo, janeStreet, capitalOne,
     uber, intel, ernstNyoung, serviceNow, tesla, verizon, bubble, microsoft,
-    robinhood, jpMorgan, tiktok, cisco, bankOfAmerica, accenture, ibm
+    robinhood, jpMorgan, tiktok, cisco, bankOfAmerica, accenture, ibm, snap
 ];
 
-export const notRecruitingText = `We are not looking to take on any new members at the moment, as our recruitment cycle has ended. Please check back for recruitment information at the start of the next semester.`
+export const notRecruitingText = `We are not looking to take on any new members at the moment, as our recruitment cycle has ended. Please check back for recruitment information at the start of next semester.`

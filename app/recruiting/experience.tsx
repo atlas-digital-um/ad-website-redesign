@@ -46,7 +46,7 @@ const MemberExperience = ({ experience }: { experience: Experience }) => {
 
                 <div className="relative w-full h-full overflow-hidden rounded-3xl bg-ad-dark shadow-glow">
                     {experience.slides.map((slide, id) => (
-                        <div key={id} className={`absolute duration-300 ${id === slideIndex ? "opacity-100" : "opacity-0 -z-10"}`}>
+                        <div key={id} className={`absolute duration-500 ${id === slideIndex ? "opacity-100" : "opacity-0 -z-10"}`}>
                             <div className="w-full h-[500px] flex justify-center items-center rounded-3xl">
                                 <Image
                                     className="flex object-cover h-[500px] rounded-3xl"

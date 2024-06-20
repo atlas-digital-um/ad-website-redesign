@@ -131,7 +131,7 @@ export default function Home() {
                     {({ countUpRef }) => <span ref={countUpRef} />}
                   </CountUp>
                 </div>
-                <p className="text-2xl font-bold text-ad-blue text-center">
+                <p className="text-2xl font-bold text-ad-blue text-center uppercase">
                   {stat.label}
                 </p>
               </div>

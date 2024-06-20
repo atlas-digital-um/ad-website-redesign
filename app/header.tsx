@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { ad_logo, close, menu as menuLogo } from "./svg";
-import { navBar, applicationPortal } from "./text";
+import { navBar, applicationPortal, currentlyRecruiting } from "./text";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -77,7 +77,7 @@ const Navbar = () => {
                   </li>
                 )
               )}
-              <li>
+              <li className={`${currentlyRecruiting ? '' : 'hidden'}`}>
                 <Link href={applicationPortal} target="_blank">
                   <button className="px-8 py-1 rounded-lg text-white font-bold hover:shadow-button bg-gradient-to-r from-ad-dark-blue to-[#1DAFEC] duration-200">
                     Apply
