@@ -17,7 +17,7 @@ import dewpoint from "../public/clients/example-dewpoint.jpg";
 
 import {
   accenture,
-  //   adobe,
+  adobe,
   aiml,
   akunaCapital,
   amazon,
@@ -517,8 +517,8 @@ export const companyCloud = [
   salesforce,
   serviceNow,
   verizon,
+  adobe,
   atNt,
-  //   adobe,
 ];
 
 export const notRecruitingText = `We are not looking to take on any new members at the moment, as our recruitment cycle has ended. Please check back for recruitment information at the start of next semester.`;
