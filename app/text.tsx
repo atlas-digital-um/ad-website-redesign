@@ -15,7 +15,7 @@ import palmTree from "../public/clients/example-palmTree.jpg";
 import saphran from "../public/clients/example-saphran.jpg";
 import dewpoint from "../public/clients/example-dewpoint.jpg";
 
-import { accenture, aiml, amazon, apple, atNt, bankOfAmerica, bloomberg, bubble, capitalOne, cisco, cloudComputing, databricks, datadog, dbManagement, deloitte, duolingo, ernstNyoung, figma, google, ibm, imc, intel, janeStreet, jpMorgan, meta, microsoft, mongoDB, palantir, paypal, ramp, robinhood, salesforce, seo, serviceNow, snap, stripe, tesla, tiktok, uber, uxDesign, verizon, webDev } from "./svg";
+import { accenture, aiml, akunaCapital, amazon, apple, atNt, bankOfAmerica, bloomberg, bubble, capitalOne, cisco, cloudComputing, databricks, datadog, dbManagement, deloitte, duolingo, ernstNyoung, figma, google, ibm, imc, intel, janeStreet, jpMorgan, meta, microsoft, mongoDB, palantir, paypal, ramp, robinhood, salesforce, seo, serviceNow, snap, stripe, tesla, tiktok, uber, uxDesign, verizon, webDev } from "./svg";
 
 // imports for recruiting page
 import alexyang from "/public/headshots/alexyang.jpg";
@@ -426,9 +426,9 @@ export const exampleProjects = [
 export const companyCloud = [
     atNt, meta, salesforce, google, deloitte, stripe, figma, amazon,
     mongoDB, apple, paypal, palantir, duolingo, janeStreet, capitalOne,
-    uber, intel, ernstNyoung, serviceNow, tesla, verizon, bubble, microsoft,
-    robinhood, jpMorgan, tiktok, cisco, bankOfAmerica, accenture, ibm, snap, 
-    ramp, bloomberg, imc, databricks, datadog
+    uber, intel, akunaCapital, ernstNyoung, serviceNow, tesla, verizon, bubble, microsoft,
+    imc, jpMorgan, bloomberg, cisco, bankOfAmerica, accenture, ibm, snap, 
+    ramp, tiktok, robinhood, databricks, datadog
 ];
 
 export const notRecruitingText = `We are not looking to take on any new members at the moment, as our recruitment cycle has ended. Please check back for recruitment information at the start of next semester.`
