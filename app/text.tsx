@@ -15,7 +15,7 @@ import palmTree from "../public/clients/example-palmTree.jpg";
 import saphran from "../public/clients/example-saphran.jpg";
 import dewpoint from "../public/clients/example-dewpoint.jpg";
 
-import { accenture, aiml, akuna, amazon, apple, atNt, bankOfAmerica, bloomberg, bubble, capitalOne, cisco, cloudComputing, databricks, datadog, dbManagement, deloitte, duolingo, ernstNyoung, figma, google, ibm, imc, intel, janeStreet, jpMorgan, meta, microsoft, mongoDB, palantir, paypal, ramp, robinhood, salesforce, seo, serviceNow, snap, stripe, tesla, tiktok, uber, uxDesign, verizon, webDev } from "./svg";
+import { accenture, aiml, amazon, apple, atNt, bankOfAmerica, bloomberg, bubble, capitalOne, cisco, cloudComputing, databricks, datadog, dbManagement, deloitte, duolingo, ernstNyoung, figma, google, ibm, imc, intel, janeStreet, jpMorgan, meta, microsoft, mongoDB, palantir, paypal, ramp, robinhood, salesforce, seo, serviceNow, snap, stripe, tesla, tiktok, uber, uxDesign, verizon, webDev } from "./svg";
 
 // imports for recruiting page
 import alexyang from "/public/headshots/alexyang.jpg";
