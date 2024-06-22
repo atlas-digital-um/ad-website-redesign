@@ -514,11 +514,11 @@ export const companyCloud = [
   ernstNyoung,
   duolingo,
   mongoDB,
+  adobe,
   salesforce,
   serviceNow,
   verizon,
-  adobe,
-  atNt,
+  // atNt,
 ];
 
 export const notRecruitingText = `We are not looking to take on any new members at the moment, as our recruitment cycle has ended. Please check back for recruitment information at the start of next semester.`;
