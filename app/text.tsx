@@ -76,7 +76,7 @@ import bigLittle1 from "/public/recruiting/biglittle1.jpg";
 import bigLittle2 from "/public/recruiting/biglittle2.jpg";
 import bigLittle3 from "/public/recruiting/biglittle3.jpg";
 
-export const applicationPortal = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+export const applicationPortal = "https://www.portal.atlasdigital.org/login";
 
 export const navBar = [
   {
@@ -97,50 +97,44 @@ export const navBar = [
   },
 ];
 
-export const currentlyRecruiting = false;
+export const currentlyRecruiting = true;
 
 export const recruitmentEvents = [
   {
     name: "Festifall",
-    date: new Date(2024, 4, 31, 16, 24),
-    time: "2:30-6 PM",
+    date: new Date(2024, 7, 28, 18, 0),
+    time: "6-8:30 PM",
     location: "The Diag",
   },
   {
     name: "Mass Meeting I",
-    date: new Date(2024, 4, 31, 16, 26),
+    date: new Date(2024, 8, 3, 19, 0),
     time: "7-8:30 PM",
     location: "League | Hussey",
   },
   {
     name: "Mass Meeting II",
-    date: new Date(2024, 4, 31, 16, 28),
+    date: new Date(2024, 8, 4, 19, 0),
     time: "7-8:30 PM",
-    location: "League | Hussey",
+    location: "North Quad | 2435",
   },
   {
     name: "DEI Panel",
-    date: new Date(2024, 4, 31, 16, 30),
+    date: new Date(2024, 8, 5, 19, 0),
     time: "7-8:30 PM",
-    location: "League | Hussey",
+    location: "League | Henderson",
   },
   {
     name: "Career Workshop",
-    date: new Date(2024, 4, 31, 16, 32),
+    date: new Date(2024, 8, 6, 19, 0),
     time: "7-8:30 PM",
-    location: "League | Hussey",
+    location: "North Quad | 2435",
   },
   {
     name: "Application Due",
-    date: new Date(2024, 4, 31, 16, 34),
-    time: "7-8:30 PM",
-    location: "League | Hussey",
-  },
-  {
-    name: "Selection Process",
-    date: new Date(2024, 4, 31, 16, 36),
-    time: "TBD",
-    location: "By Invite Only",
+    date: new Date(2024, 8, 7, 23, 59),
+    time: "11:59 PM",
+    location: "",
   },
 ];
 

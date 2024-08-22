@@ -73,13 +73,24 @@ const Navbar = () => {
                 (page, idx) => (
                   <li key={idx} className={"group"}>
                     <Link className='group-hover:text-ad-blue duration-200' href={page['route']}>{page['page']}</Link>
-                    <div className={"w-full h-0.5 rounded " + (pathname === page['route'] ? "bg-white group-hover:bg-ad-blue duration-200" : "")}></div>
+                    {/* <div className={"w-full h-0.5 rounded " + (pathname === page['route'] ? "bg-white group-hover:bg-ad-blue duration-200" : "")}></div> */}
+
+
+                    <div
+                      className={
+                        "w-full h-0.5 rounded duration-200 group-hover:cursor-pointer " +
+                        (pathname === page['route']
+                          ? "bg-white animate-desktopLineExpand group-hover:bg-ad-blue"
+                          : "")
+                      }
+                    />
+
                   </li>
                 )
               )}
               <li className={`${currentlyRecruiting ? '' : 'hidden'}`}>
                 <Link href={applicationPortal} target="_blank">
-                  <button className="px-8 py-1 rounded-lg text-white font-bold hover:shadow-button bg-gradient-to-r from-ad-dark-blue to-[#1DAFEC] duration-200">
+                  <button className="w-28 py-1 rounded-lg text-white font-bold hover:shadow-button bg-gradient-to-r from-ad-dark-blue to-[#1DAFEC] duration-200">
                     Apply
                   </button>
                 </Link>

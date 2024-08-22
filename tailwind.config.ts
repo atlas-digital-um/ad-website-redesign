@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        desktopLineExpand: {
+          "0%": { transform: "scaleX(0)" },
+          "100%": { transform: "scaleX(1)" },
+        },
+      },
+      animation: {
+        desktopLineExpand: " desktopLineExpand .25s ease-in-out"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

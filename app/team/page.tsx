@@ -99,7 +99,7 @@ const MemberLinks = ({ member }: { member: Member }) => {
                 (link) => !link.includes("linkedin") && !link.includes("github")
               )!
             }
-            className="group size-6"
+            className="size-6 hover:text-ad-blue duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >{website}</Link>
@@ -107,7 +107,7 @@ const MemberLinks = ({ member }: { member: Member }) => {
         {hasLinkedIn && (
           <Link
             href={member.links.find((link) => link.includes("linkedin.com"))!}
-            className="group size-6"
+            className="size-6 hover:text-ad-blue duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >{linkedin}</Link>
@@ -115,7 +115,7 @@ const MemberLinks = ({ member }: { member: Member }) => {
         {hasGitHub && (
           <Link
             href={member.links.find((link) => link.includes("github.com"))!}
-            className="group size-6"
+            className="size-6 hover:text-ad-blue duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >{github}</Link>

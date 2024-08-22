@@ -54,7 +54,7 @@ const Testimonial = ({ testimonials, height, circle }: { testimonials: Testimoni
                 style={{ height: `${maxHeight}px` }}
             >
                 <div className="hidden sm:flex items-center z-20">
-                    <div className="group hover:cursor-pointer m-4 md:m-8 p-2" onClick={handleLeftClick}>{arrow_left}</div>
+                    <div className="hover:cursor-pointer m-4 md:m-8 p-2 text-ad-blue hover:text-white duration-200" onClick={handleLeftClick}>{arrow_left}</div>
                 </div>
                 <div className="relative px-4 sm:px-0 w-full">
                     {testimonials.map((testimonial, id) => (
@@ -69,7 +69,7 @@ const Testimonial = ({ testimonials, height, circle }: { testimonials: Testimoni
                             >
                                 <div>
                                     <Image
-                                        className={`hidden lg:flex object-cover ${circle ? 'rounded-full max-w-48 max-h-48' : 'rounded-xl max-w-36 max-h-36'}`}
+                                        className={`hidden lg:flex object-cover select-none ${circle ? 'rounded-full max-w-48 max-h-48' : 'rounded-xl max-w-36 max-h-36'}`}
                                         src={testimonial.photo}
                                         alt="headshot"
                                         draggable={false}
@@ -78,7 +78,7 @@ const Testimonial = ({ testimonials, height, circle }: { testimonials: Testimoni
                                 <div className={`lg:w-2/3 space-y-4 `}>
                                     <div className="flex space-x-4 lg:space-x-0 items-center ">
                                         <Image
-                                            className={`lg:hidden object-cover ${circle ? 'rounded-full max-w-20 max-h-20' : 'rounded-xl max-w-12 max-h-12'}`}
+                                            className={`lg:hidden object-cover select-none ${circle ? 'rounded-full max-w-20 max-h-20' : 'rounded-xl max-w-12 max-h-12'}`}
                                             src={testimonial.photo}
                                             alt="headshot"
                                             draggable={false}
@@ -92,7 +92,7 @@ const Testimonial = ({ testimonials, height, circle }: { testimonials: Testimoni
                     ))}
                 </div>
                 <div className="hidden sm:flex items-center">
-                    <div className="group hover:cursor-pointer m-4 md:m-8 p-2" onClick={handleRightClick}>{arrow_right}</div>
+                    <div className="hover:cursor-pointer m-4 md:m-8 p-2 text-ad-blue hover:text-white duration-200" onClick={handleRightClick}>{arrow_right}</div>
                 </div>
             </div>
             <div className="flex flex-row justify-center space-x-4">

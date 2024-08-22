@@ -46,7 +46,9 @@ const Dropdown = ({ serviceinfo }: { serviceinfo: ServiceInfo }) => {
           <div className="sm:text-xl font-bold sm:font-normal">{service}</div>
         </div>
         <div className={`transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"
-          }`}>{arrow_down}</div>
+          }`}>
+          <div className="text-ad-blue group-hover:text-white duration-200">{arrow_down}</div>
+        </div>
       </div>
       <div
         className={`transition-all duration-300 ease-in-out overflow-hidden w-full ${isOpen ? "opacity-100" : "opacity-0 "

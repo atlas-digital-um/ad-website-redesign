@@ -39,7 +39,10 @@ export const Question = ({ faq }: { faq: FAQ }) => {
     >
       <div className="p-6 pb-4 flex justify-between items-center space-x-8">
         <h3 className={`text-lg ${isOpen ? "font-semibold" : ""}`}>{question}</h3>
-        <div className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}>{arrow_down}</div>
+        <div className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}>
+          
+          <div className="text-ad-blue group-hover:text-white duration-200">{arrow_down}</div>
+        </div>
       </div>
       <div
         className={`py-0 overflow-hidden transition-all duration-300 ease-out ${isOpen ? 'opacity-100' : 'opacity-0'}`}

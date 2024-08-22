@@ -26,8 +26,8 @@ export default function Footer() {
             <div style={{ whiteSpace: "nowrap" }}>Established 2019</div>
           </div>
           <div className="flex items-center space-x-4">
-            <Link href="https://www.linkedin.com/company/atlas-digital-um" target="_blank">{linkedin}</Link>
-            <Link href="https://www.instagram.com/atlasdigital_um/" target="_blank">{insta}</Link>
+            <Link className="text-white hover:text-ad-blue duration-200" href="https://www.linkedin.com/company/atlas-digital-um" target="_blank">{linkedin}</Link>
+            <Link className="text-white hover:text-ad-blue duration-200" href="https://www.instagram.com/atlasdigital_um/" target="_blank">{insta}</Link>
           </div>
         </div>
 

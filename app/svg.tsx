@@ -1,6 +1,6 @@
 export const footer_linkedin = (
   <svg
-    className="w-6 h-6 fill-current hover:text-ad-blue duration-200"
+    className="w-6 h-6 fill-current "
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,7 @@ export const footer_linkedin = (
 
 export const footer_insta = (
   <svg
-    className="w-6 h-6 fill-current hover:text-ad-blue duration-200"
+    className="w-6 h-6 fill-current "
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ export const footer_insta = (
 
 export const team_website = (
   <svg
-    className="w-5 h-5 fill-current group-hover:text-ad-blue duration-200"
+    className="w-5 h-5 fill-current "
     viewBox="0 0 25 25"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ export const team_website = (
 
 export const team_linkedin = (
   <svg
-    className="w-4 h-4 fill-current group-hover:text-ad-blue duration-200"
+    className="w-4 h-4 fill-current "
     viewBox="0 0 24 24"
   >
     <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
@@ -42,7 +42,7 @@ export const team_linkedin = (
 
 export const team_github = (
   <svg
-    className="w-5 h-5 fill-current group-hover:text-ad-blue duration-200"
+    className="w-5 h-5 fill-current "
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -115,7 +115,7 @@ export const menu = (
 
 export const arrow_down = (
   <svg
-    className="w-5 h-5 fill-current text-ad-blue group-hover:text-white duration-200 hover:cursor-pointer"
+    className="w-5 h-5 fill-current "
     viewBox="0 0 41 25"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export const arrow_down = (
 
 export const arrow_left = (
   <svg
-    className="w-5 h-5 fill-current text-ad-blue group-hover:text-white duration-200 hover:cursor-pointer"
+    className="w-5 h-5 fill-current "
     viewBox="0 0 24 41"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ export const arrow_left = (
 
 export const arrow_right = (
   <svg
-    className="w-5 h-5 fill-current text-ad-blue group-hover:text-white duration-200 hover:cursor-pointer"
+    className="w-5 h-5 fill-current "
     viewBox="0 0 25 41"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

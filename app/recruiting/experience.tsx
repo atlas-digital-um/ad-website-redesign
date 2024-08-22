@@ -41,15 +41,15 @@ const MemberExperience = ({ experience }: { experience: Experience }) => {
 
             <div className="flex sm:space-x-4 h-[500px] rounded-3xl ">
                 <div className="hidden sm:flex items-center">
-                    <div className="group hover:cursor-pointer p-2" onClick={handleLeftClick}>{arrow_left}</div>
+                    <div className="hover:cursor-pointer p-2 text-ad-blue hover:text-white duration-200" onClick={handleLeftClick}>{arrow_left}</div>
                 </div>
 
                 <div className="relative w-full h-full overflow-hidden rounded-3xl bg-ad-dark shadow-glow">
                     {experience.slides.map((slide, id) => (
-                        <div key={id} className={`absolute duration-500 ${id === slideIndex ? "opacity-100" : "opacity-0 -z-10"}`}>
+                        <div key={id} className={`absolute duration-500 ${id === slideIndex ? "opacity-100" : "opacity-0 "}`}>
                             <div className="w-full h-[500px] flex justify-center items-center rounded-3xl">
                                 <Image
-                                    className="flex object-cover h-[500px] rounded-3xl"
+                                    className="flex object-cover h-[500px] rounded-3xl select-none"
                                     src={slide.photo}
                                     alt="headshot"
                                     draggable={false}
@@ -65,7 +65,7 @@ const MemberExperience = ({ experience }: { experience: Experience }) => {
                 </div>
 
                 <div className="hidden sm:flex items-center">
-                    <div className="group hover:cursor-pointer p-2" onClick={handleRightClick}>{arrow_right}</div>
+                    <div className="hover:cursor-pointer p-2 text-ad-blue hover:text-white duration-200" onClick={handleRightClick}>{arrow_right}</div>
                 </div>
 
             </div>

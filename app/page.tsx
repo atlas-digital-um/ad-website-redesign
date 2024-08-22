@@ -140,7 +140,7 @@ export default function Home() {
         </div>
         <div className="communitySection flex flex-col items-center space-y-12">
           <h2 className="text-2xl text-white font-bold z-40">OUR COMMUNITY</h2>
-          <div className="z-40">
+          <div className="z-40 select-none">
             <video
               className="rounded-2xl shadow-glow w-full bg-ad-dark bg-opacity-50"
               onContextMenu={(e) => e.preventDefault()}

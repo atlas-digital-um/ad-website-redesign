@@ -58,7 +58,7 @@ const PastProjects = ({ projects }: { projects: Project[] }) => {
                 style={{ height: `${projectHeight}px` }}
             >
                 <div className="hidden sm:flex items-center z-20">
-                    <div className="group hover:cursor-pointefr m-4 md:ml-8 md:mr-6 lg:m-8 p-2" onClick={handleLeftClick}>{arrow_left}</div>
+                    <div className="hover:cursor-pointer m-4 md:ml-8 md:mr-6 lg:m-8 p-2 text-ad-blue hover:text-white duration-200" onClick={handleLeftClick}>{arrow_left}</div>
                 </div>
 
                 <div className={`relative flex flex-row items-center w-full lg:w-4/5 h-full`}>
@@ -97,7 +97,7 @@ const PastProjects = ({ projects }: { projects: Project[] }) => {
                 </div>
 
                 <div className="hidden sm:flex items-center">
-                    <div className="group hover:cursor-pointer m-4 md:mr-8 md:ml-6 lg:m-8 p-2" onClick={handleRightClick}>{arrow_right}</div>
+                    <div className="hover:cursor-pointer m-4 md:mr-8 md:ml-6 lg:m-8 p-2 text-ad-blue hover:text-white duration-200" onClick={handleRightClick}>{arrow_right}</div>
                 </div>
 
             </div>
