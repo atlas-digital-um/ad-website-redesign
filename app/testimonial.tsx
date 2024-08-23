@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { arrow_left, arrow_right } from "./svg";
 import Image, { StaticImageData } from "next/image";
 
+
 type Testimonial = {
     name: string,
     testimonial: string,
