@@ -90,14 +90,16 @@ const MemberLinks = ({ member }: { member: Member }) => {
       (link) => !link.includes("linkedin") && !link.includes("github")
     );
 
+    const addPrefix = (url: string | undefined) => (url && url.indexOf('://') === -1) ? 'http://' + url : url;
+
     return (
       <div className="flex items-center space-x-3 pt-4">
         {hasWebsite && (
           <Link
             href={
-              member.links.find(
+              addPrefix(member.links.find(
                 (link) => !link.includes("linkedin") && !link.includes("github")
-              )!
+              ))!
             }
             className="size-6 hover:text-ad-blue duration-200"
             target="_blank"
@@ -106,7 +108,7 @@ const MemberLinks = ({ member }: { member: Member }) => {
         )}
         {hasLinkedIn && (
           <Link
-            href={member.links.find((link) => link.includes("linkedin.com"))!}
+            href={addPrefix(member.links.find((link) => link.includes("linkedin.com")))!}
             className="size-6 hover:text-ad-blue duration-200"
             target="_blank"
             rel="noopener noreferrer"
@@ -114,7 +116,7 @@ const MemberLinks = ({ member }: { member: Member }) => {
         )}
         {hasGitHub && (
           <Link
-            href={member.links.find((link) => link.includes("github.com"))!}
+            href={addPrefix(member.links.find((link) => link.includes("github.com")))!}
             className="size-6 hover:text-ad-blue duration-200"
             target="_blank"
             rel="noopener noreferrer"
@@ -196,17 +198,20 @@ export default async function Team() {
   const AlumniMemberText = ({ alumni }: { alumni: Member }) => {
 
     let hasLinkedIn = false
+    
     if (alumni.links) {
       hasLinkedIn = alumni.links.some((link) =>
         link.includes("linkedin.com")
       );
     }
 
+    const addPrefix = (url: string | undefined) => (url && url.indexOf('://') === -1) ? 'http://' + url : url;
+
     return (
       <div className="w-full my-auto">
         {hasLinkedIn &&
           <a
-            href={alumni.links.find((link) => link.includes("linkedin.com"))!}
+            href={addPrefix(alumni.links.find((link) => link.includes("linkedin.com")))!}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-ad-blue duration-200 flex justify-center text-center items-center"
