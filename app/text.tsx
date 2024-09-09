@@ -97,7 +97,7 @@ export const navBar = [
   },
 ];
 
-export const currentlyRecruiting = true;
+export const currentlyRecruiting = false;
 
 export const recruitmentEvents = [
   {
