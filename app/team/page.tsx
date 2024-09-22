@@ -49,18 +49,20 @@ const getProps = async () => {
   for (let i = 0; i < n; i++) {
     let curMember = members ? members[i] : {};
 
-    if (curMember.position === "Analyst") {
-      newAnalysts.push(curMember as Member);
-    } else if (curMember.position === "Senior Advisor" || curMember.position === undefined || curMember.position === "") {
-      newAdvisors.push(curMember as Member);
-    } else if (curMember.position === "Project Manager") {
-      newManagers.push(curMember as Member);
-    } else if (curMember.position === "President" || curMember.position === "Vice President") {
-      newPresVP.unshift(curMember as Member);
-    } else if (curMember.position === "Alumni") {
-      newAlumni.push(curMember as Member);
-    } else {
-      newBoard.push(curMember as Member);
+    if (curMember.position == "Alumni" || (curMember.position != "Alumni" && curMember.pfpURL != "/pfpWhite.png")) {
+      if (curMember.position === "Analyst") {
+        newAnalysts.push(curMember as Member);
+      } else if (curMember.position === "Senior Advisor" || curMember.position === undefined || curMember.position === "") {
+        newAdvisors.push(curMember as Member);
+      } else if (curMember.position === "Project Manager") {
+        newManagers.push(curMember as Member);
+      } else if (curMember.position === "President" || curMember.position === "Vice President") {
+        newPresVP.unshift(curMember as Member);
+      } else if (curMember.position === "Alumni") {
+        newAlumni.push(curMember as Member);
+      } else {
+        newBoard.push(curMember as Member);
+      }
     }
   }
 
@@ -198,7 +200,7 @@ export default async function Team() {
   const AlumniMemberText = ({ alumni }: { alumni: Member }) => {
 
     let hasLinkedIn = false
-    
+
     if (alumni.links) {
       hasLinkedIn = alumni.links.some((link) =>
         link.includes("linkedin.com")
