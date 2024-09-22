@@ -48,7 +48,6 @@ const getProps = async () => {
   const n = members?.length ? members.length : 0;
   for (let i = 0; i < n; i++) {
     let curMember = members ? members[i] : {};
-
     if (curMember.position == "Alumni" || (curMember.position != "Alumni" && curMember.pfpURL != "/pfpWhite.png")) {
       if (curMember.position === "Analyst") {
         newAnalysts.push(curMember as Member);
