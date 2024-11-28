@@ -1231,7 +1231,7 @@ export const ernstNyoung = (
 
 export const serviceNow = (
   <svg
-    className="h-2 sm:h-4 lg:h-6 fill-current text-white"
+    className="h-4 sm:h-5 lg:h-6 fill-current text-white"
     viewBox="0 0 130 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
