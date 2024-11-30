@@ -54,10 +54,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-
-
-      <header className={`flex flex-col px-8 text-white font-kanit z-40 relative duration-200 ${isVisible ? 'backdrop-blur bg-ad-dark/90' : ''}`}>
+    <div className="text-white font-kanit">
+      <header className={`flex flex-col px-8 z-40 relative duration-200 ${isVisible ? 'backdrop-blur bg-ad-dark/90' : ''}`}>
         <div className={`absolute top-0 left-0 h-full w-full -z-10 border-b border-white/10 transition-opacity duration-200 opacity-0 ${isVisible ? 'opacity-100' : 'opacity-0'}`} />
         {/* <div className={`absolute top-0 left-0 h-full w-full -z-20 transition-all duration-200 ${isVisible ? 'backdrop-blur-lg backdrop-brightness-50' : 'backdrop-blur-none backdrop-brightness-100'}`} /> */}
         <div className="flex flex-row items-center justify-between py-4">
